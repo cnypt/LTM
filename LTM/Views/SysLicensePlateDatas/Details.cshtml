@@ -1,0 +1,78 @@
+@model LTM.Models.SysLicensePlateData
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SysLicensePlateData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Licenseplatetype)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Licenseplatetype)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Licenseplate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Licenseplate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Createdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Createdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Createuserid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Createuserid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authstatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authstatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authpassdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authpassdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authpassuserid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authpassuserid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authunpassdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authunpassdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Anthunpassuserid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Anthunpassuserid)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

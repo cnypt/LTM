@@ -1,0 +1,99 @@
+@model LTM.Models.SysLicensePlateData
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>SysLicensePlateData</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="Licenseplatetype" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Licenseplatetype" class="form-control" />
+                <span asp-validation-for="Licenseplatetype" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Licenseplate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Licenseplate" class="form-control" />
+                <span asp-validation-for="Licenseplate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Createdate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Createdate" class="form-control" />
+                <span asp-validation-for="Createdate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Createuserid" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Createuserid" class="form-control" />
+                <span asp-validation-for="Createuserid" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Authstatus" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Authstatus" class="form-control" />
+                <span asp-validation-for="Authstatus" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Authpassdate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Authpassdate" class="form-control" />
+                <span asp-validation-for="Authpassdate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Authpassuserid" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Authpassuserid" class="form-control" />
+                <span asp-validation-for="Authpassuserid" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Authunpassdate" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Authunpassdate" class="form-control" />
+                <span asp-validation-for="Authunpassdate" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Anthunpassuserid" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Anthunpassuserid" class="form-control" />
+                <span asp-validation-for="Anthunpassuserid" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,83 @@
+@model LTM.Models.SysLicensePlateData
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>SysLicensePlateData</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="Id" />
+        <dt>
+            @Html.DisplayNameFor(model => model.Licenseplatetype)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Licenseplatetype)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Licenseplate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Licenseplate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Createdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Createdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Createuserid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Createuserid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authstatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authstatus)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authpassdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authpassdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authpassuserid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authpassuserid)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Authunpassdate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Authunpassdate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Anthunpassuserid)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Anthunpassuserid)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Back to List</a>
+        </div>
+    </form>
+</div>
