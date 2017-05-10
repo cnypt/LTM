@@ -12,25 +12,25 @@
 <table class="table">
     <thead>
         <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Licenseplatetype)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Licenseplate)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Password)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Createdate)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Createuserid)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Authstatus)
-                </th>
-                <th>
+            <th>
+                @Html.DisplayNameFor(model => model.Licenseplatetype)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Licenseplate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Createdate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Createuserid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Authstatus)
+            </th>
+            @*<th>
                     @Html.DisplayNameFor(model => model.Authpassdate)
                 </th>
                 <th>
@@ -41,49 +41,50 @@
                 </th>
                 <th>
                     @Html.DisplayNameFor(model => model.Anthunpassuserid)
-                </th>
+                </th>*@
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Licenseplatetype)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Licenseplate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Createdate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Createuserid)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Authstatus)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Authpassdate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Authpassuserid)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Authunpassdate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Anthunpassuserid)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Licenseplatetype)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Licenseplate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Createdate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Createuserid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Authstatus)
+                </td>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.Authpassdate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Authpassuserid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Authunpassdate)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Anthunpassuserid)
+                    </td>*@
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

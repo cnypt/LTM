@@ -8,6 +8,9 @@ namespace LTM.Models
         public long Id { get; set; }
         public int Licenseplatetype { get; set; }
         public string Licenseplate { get; set; }
+        /// <summary>
+        /// 密码
+        /// </summary>
         public string Password { get; set; }
         public DateTime Createdate { get; set; }
         public Guid Createuserid { get; set; }
