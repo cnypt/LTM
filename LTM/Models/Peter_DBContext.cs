@@ -12,7 +12,7 @@ namespace LTM.Models
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
-        //    optionsBuilder.UseSqlServer(@"Server=123.207.253.130;Database=Peter_DB;User=sa;Password=sa1234566Q;MultipleActiveResultSets=True");
+        //    optionsBuilder.UseSqlServer(@"Server=123.207.253.130;Database=Peter_DB;User=sa;Password=;MultipleActiveResultSets=True");
         //}
         public Peter_DBContext(DbContextOptions<Peter_DBContext> options):base(options)
         { }
